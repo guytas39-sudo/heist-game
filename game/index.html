@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Velvet Vault — a heist game</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #0b0e18;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', serif;
+  }
+  #wrap { text-align: center; }
+  canvas {
+    display: block;
+    width: 1280px;
+    height: 800px;
+    max-width: 96vw;
+    max-height: 92vh;
+    background: #10131f;
+    border: 2px solid #c9a227;
+    border-radius: 8px;
+    box-shadow: 0 0 60px rgba(201, 162, 39, 0.25);
+  }
+  p { color: #9a8f7a; font-size: 14px; margin: 10px 0 0; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="800"></canvas>
+  <p>The Velvet Vault — sneak, steal, crack the vault, escape. WASD/arrows move, E grabs &amp; cracks, P pauses, R restarts, M mutes.</p>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
